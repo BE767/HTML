@@ -17,14 +17,14 @@
 	<div class="nav-p" >
 		<nav class=" NVC  contenedor">
 		<a href="#init">init</a>
-		<a href="#">status</a>
-		<a href="#">branch</a>
-		<a href="#">checkout</a>
-		<a href="#">remote</a>
-		<a href="#">pull</a>
-		<a href="#">push</a>
-		<a href="#">clone</a>
-		<a href="#">commit</a>
+		<a href="#status">status</a>
+		<a href="#branch">branch</a>
+		<a href="#checkout">checkout</a>
+		<a href="#remote">remote</a>
+		<a href="#pull">pull</a>
+		<a href="#push">push</a>
+		<a href="#clone">clone</a>
+		<a href="#commit">commit</a>
 		</nav>
 	</div>
 	<h2>Que es Git</h2>
@@ -46,69 +46,87 @@
 		<li>Fusiona ("merge") tu rama con la rama principal</li>
 	  </ul>
 
-	  <div   class="Separar">
+	  <div class="Separar">
 		<h3>Explicación</h3>
 	  </div >
-
+	  
+		<a name="init"></a>
+		<div class="Parrafos">
 	  <h4>Init</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		 Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		 <br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		 <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		 <br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		
+	  <p>El comando git init crea un nuevo repositorio de Git.<br>
+		 Puede utilizarse para convertir un proyecto existente y sin versión en un repositorio de Git
+		 <br> o para inicializar un nuevo repositorio vacío. La mayoría de los demás comandos de Git no se encuentran disponibles fuera de un repositorio inicializado,por lo que este suele ser el primer comando que se ejecuta en un proyecto nuevo.
+		 <br>
+
+		 <br> Al ejecutar git init, se crea un subdirectorio de .git en el directorio de trabajo actual, que contiene todos los metadatos de Git necesarios para el nuevo repositorio.
+		 Estos metadatos incluyen subdirectorios de objetos, referencias y archivos de plantilla. También se genera un archivo HEAD que apunta a la confirmación actualmente extraída.
+		 Aparte del directorio de .git, en el directorio raíz del proyecto, se conserva un proyecto existente sin modificar (a diferencia de SVN, Git no requiere un subdirectorio de .git en cada subdirectorio).
+		 para mas Informacion consultar <a href="https://www.atlassian.com/es/git/tutorials/setting-up-a-repository/git-init#:~:text=El%20comando%20git%20init%20crea,inicializar%20un%20nuevo%20repositorio%20vac%C3%ADo.">Funcionamiento de Git Int</a>
+		
+		
+		</p>
+		 <a name="status"></a>
 	  <h4>status</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>
+		El git status comando muestra el estado del directorio de trabajo y el área de ensayo. 
+		Le permite ver qué cambios se han realizado, cuáles no y qué archivos no están siendo rastreados por Git. La salida de estado no muestra ninguna información sobre el historial del proyecto comprometido. Para esto, necesitas usar .git log
+		es un comando relativamente sencillo. Simplemente le muestra lo que ha estado pasando con git addy git commit. Los mensajes de estado también incluyen instrucciones relevantes para preparar/retirar archivos. 
+		git statusA continuación se incluye un ejemplo de salida que muestra las tres categorías principales de una llamada:
+		Mas informacion <a href="https://www.atlassian.com/git/tutorials/inspecting-a-repository#:~:text=The%20git%20status%20command%20displays,regarding%20the%20committed%20project%20history.">Git Status</a>
+	</p>
+		<a name="branch"></a>
 	  <h4>branch</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="checkout"></a>
 	  <h4>checkout</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="remote"></a>
 	  <h4>remote</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="pull"></a>
 	  <h4>pull</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="push"></a>
 	  <h4>push</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="clone"></a>
 	  <h4>clone</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+		<a name="commit"></a>
 	  <h4>commit</h4>
 	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
 		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
 		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
 		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
 		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
-
+	</div >
 </body>
 </html>
-
-
 
 
 
