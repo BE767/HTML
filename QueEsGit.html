@@ -48,7 +48,11 @@
 
 	  <div class="Separar">
 		<h3>Explicación</h3>
-	  </div >
+
+
+
+
+	  </div>
 	  
 		<a name="init"></a>
 		<div class="Parrafos">
@@ -77,60 +81,68 @@
 	</p>
 		<a name="branch"></a>
 	  <h4>branch</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>
+		Una rama representa una línea independiente de desarrollo. Las ramas sirven como una abstracción para el proceso de edición/etapa/confirmación. Puede pensar en ellos como una forma de solicitar un directorio de trabajo, 
+		un área de preparación y un historial de proyectos completamente nuevos. Las nuevas confirmaciones se registran en el historial de la rama actual, lo que da como resultado una bifurcación en el historial del proyecto.
+		El git branchcomando le permite crear, enumerar, renombrar y eliminar sucursales. No le permite cambiar entre ramas o volver a armar un historial bifurcado.
+		Por esta razón, git branchestá estrechamente integrado con los comandos git checkouty git merge.
+		Para operar más en las ramas resultantes, el comando se usa comúnmente con otros comandos como git checkout.
+		 Obtenga más información sobre las git checkoutoperaciones de las sucursales; como cambiar de sucursal y fusionar sucursales, en la git checkoutpágina.
+		 Mas informacion <a href="https://www.atlassian.com/git/tutorials/using-branches#:~:text=In%20Git%2C%20branches%20are%20a,branch%20to%20encapsulate%20your%20changes.">Git Branch</a>
+	  </p>
 		<a name="checkout"></a>
 	  <h4>checkout</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>git-checkout - Cambiar ramas o restaurar archivos de árbol de trabajo</p>
+	  <p>
+		Actualiza archivos en el árbol de trabajo para que coincidan con la versión en el índice o el árbol especificado. Si no se proporcionó una especificación de ruta, git 
+		checkout también actualizará HEAD para establecer la rama especificada como la rama actual.
+		git checkout [<rama>]Para prepararse para trabajar en <branch>, cambie a él actualizando el índice y los archivos en el árbol de trabajo y apuntando HEAD a la rama. 
+		Las modificaciones locales de los archivos en el árbol de trabajo se conservan para que puedan confirmarse en la <rama>.
+		Mas informacion <a href="https://git-scm.com/docs/git-checkout">Git checkout</a>
+	  </p>
 		<a name="remote"></a>
 	  <h4>remote</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>Administre el conjunto de repositorios ("remotos") cuyas sucursales rastrea</p>
+	  <p>
+		<p>El git remotecomando es esencialmente una interfaz para administrar una lista de entradas remotas que se almacenan en el ./.git/configarchivo del repositorio</p>
+		El git remotecomando le permite crear, ver y eliminar conexiones a otros repositorios. 
+		Las conexiones remotas son más como marcadores que como enlaces directos a otros repositorios. 
+		En lugar de proporcionar acceso en tiempo real a otro repositorio, sirven como nombres convenientes que se pueden usar para hacer referencia a una URL no tan conveniente.
+		<a href="https://www.atlassian.com/git/tutorials/syncing#:~:text=The%20git%20remote%20command%20lets,direct%20links%20into%20other%20repositories.">Git remote</a>
+	  </p>
 		<a name="pull"></a>
 	  <h4>pull</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
-		<a name="push"></a>
+	  <p>El comando git pull se emplea para extraer y descargar contenido desde un repositorio remoto y actualizar al instante el repositorio local para reflejar ese contenido. La fusión de cambios remotos de nivel superior en tu repositorio local es una tarea habitual de los flujos de trabajo de colaboración basados en Git. El comando git pull es, en realidad, una combinación de dos comandos, git fetch seguido de git merge. En la primera etapa de la operación git pull ejecutará un git fetch en la rama local a la que apunta HEAD. Una vez descargado el contenido,
+		 git pull entrará en un flujo de trabajo de fusión. Se creará una nueva confirmación de fusión y se actualizará HEAD para que apunte a la nueva confirmación.</p>
+		<p>Funcionamiento</p>
+		<p>El comando git pull ejecuta en primer lugar git fetch, que descarga el contenido del repositorio remoto especificado. Después, se ejecuta git merge para fusionar las referencias y los encabezados del contenido remoto en una nueva confirmación de fusión local.
+			Para ilustrar mejor el proceso de incorporación de cambios y fusión, veamos el siguiente ejemplo. Supongamos que tenemos un repositorio con una rama principal y un origen remoto.</p>
+			<a href="https://www.atlassian.com/es/git/tutorials/syncing/git-pull">Git pull</a>
+			<a name="push"></a>
 	  <h4>push</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>
+		El comando git push se usa para cargar contenido del repositorio local a un repositorio remoto. El envío es la forma de transferir confirmaciones desde tu repositorio local a un repositorio remoto. 
+		Es el equivalente a git fetch, pero mientras que al recuperar se importan las confirmaciones a ramas locales, al enviar estas se exportan a ramas remotas.
+		 Las ramas remotas se configuran mediante el comando git remote. Los envíos pueden sobrescribir los cambios, por lo que se debe tener cuidado a la hora de realizarlos
+
+		<a href="https://www.freecodecamp.org/espanol/news/el-comando-git-push-explicado/">Explicación paso a paso</a>
+	</p>
+
 		<a name="clone"></a>
 	  <h4>clone</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>
+		El clon de Git se usa para copiar un repositorio de Git existente en un nuevo directorio local.
+		 El comando de clonación de Git creará un nuevo directorio local para el repositorio, copiará todo el contenido del repositorio especificado, creará las sucursales remotas rastreadas y verificará una sucursal inicial localmente</p>
+		 <a href="https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository">Clonar un Repositorio</a>
+
 		<a name="commit"></a>
 	  <h4>commit</h4>
-	  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
-		Accusamus quia dolorum soluta facilis rerum cumque cum doloribus,
-		<br>laudantium eos incidunt unde ipsum, iure alias ad error voluptas quasi in necessitatibus
-		<br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut corrupti exercitationem vel
-		<br> rerum tenetur dolor quaerat in. Non qui mollitia doloribus iste expedita, nihil fugiat? Deserunt id perferendis commodi minima..</p>
+	  <p>
+		El comando git commit captura una instantánea de los cambios realizados actualmente en el proyecto.
+		Las instantáneas comprometidas se pueden considerar como versiones "seguras" de un proyecto: Git nunca las cambiará a menos que se lo solicite explícitamente.
+		Las confirmaciones se crean con el git commitcomando para capturar el estado de un proyecto en ese momento. Las instantáneas de Git siempre se envían al repositorio local. Esto es fundamentalmente diferente de SVN, en el que la copia de trabajo se envía al repositorio central. Por el contrario, Git no te obliga a interactuar con el repositorio central hasta que estés listo. Así como el área de preparación es un búfer entre el directorio de trabajo y el historial del proyecto, el repositorio local de cada desarrollador es un búfer entre sus contribuciones y el repositorio central.
+	</p>
 	</div >
 </body>
 </html>
-
-
-
-
-
-
 
